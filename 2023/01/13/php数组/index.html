@@ -4,18 +4,19 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="php变量, Hexo">
-    <meta name="description" content="1.php变量规则：
+    <meta name="keywords" content="php数组, Hexo">
+    <meta name="description" content="php数组
+数值数组
+关联数组
+多维数组
 
-变量以 $ 符号开始，后面跟着变量的名称
+这里先介绍数值数组和关联数组
 
-变量名必须以字母或者下划线字符开始
+数值数组的创建
 
-变量名只能包含字母、数字以及下划线（A-z，0-9和 _ ）
+有两种方式
 
-变量名不能包含空格
-
-变量名是区分大小写的（$y 和 $Y是两个不同的">
+&amp;#96;&amp;#96;&amp;#96;php$student&amp;#x3D;array(“Amy”,”Ken”,”Betty”);123452.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +28,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>php变量 | Hexo</title>
+    <title>php数组 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -344,12 +345,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">php变量</h1>
+                    <h1 class="description center-align post-title">php数组</h1>
                 </div>
             </div>
         </div>
@@ -389,7 +390,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-09-20
+                    2023-01-13
                 </div>
                 
 
@@ -410,51 +411,52 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>1.php变量规则：</strong></p>
+                <h3 id="php数组"><a href="#php数组" class="headerlink" title="php数组"></a>php数组</h3><ol>
+<li>数值数组</li>
+<li>关联数组</li>
+<li>多维数组</li>
+</ol>
+<p>这里先介绍数值数组和关联数组</p>
 <ul>
-<li><p>变量以 $ 符号开始，后面跟着变量的名称</p>
-</li>
-<li><p>变量名必须以字母或者下划线字符开始</p>
-</li>
-<li><p>变量名只能包含字母、数字以及下划线（A-z，0-9和 _ ）</p>
-</li>
-<li><p>变量名不能包含空格</p>
-</li>
-<li><p>变量名是区分大小写的（$y 和 $Y是两个不同的变量）</p>
-</li>
+<li>数值数组的创建</li>
 </ul>
-<p><strong>2.创建（声明）php变量：</strong></p>
+<p>有两种方式</p>
+<ol>
+<li>&#96;&#96;&#96;php<br>$student&#x3D;array(“Amy”,”Ken”,”Betty”);<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2. ```php</span><br><span class="line">   $student[0]=&quot;Amy&quot;</span><br><span class="line">   $student[1]=&quot;ken&quot;;</span><br><span class="line">   $stduent[2]=&quot;Betty&quot;;</span><br></pre></td></tr></table></figure></li>
+</ol>
 <ul>
-<li><p>php中变量不需要声明，直接使用它赋值时，它就被创建了</p>
-<p>如：<code>$cyy=&quot;cyy hao bang!&quot;;</code></p>
-<p>此时该变量cyy就被创建了，它被赋值为”cyy hao bang！”</p>
-</li>
-<li><p>当赋一个文本类型值给变量时要加””</p>
-<p>**P.S:**php是个弱类型语言，因为它在使用变量时不必声明该变量的数据类型；反之在使用变量前需要声明变量类型的则是强类型语言，如C语言</p>
-</li>
+<li>关联数组的创建</li>
 </ul>
-<p><strong>3.php变量作用域：</strong></p>
-<p>php有四种变量作用域</p>
-<p>Local、global、static、parameter</p>
-<p>但是我对于local和parameter还不是很理解这里着重介绍global与static</p>
+<p>有两种方式</p>
+<ol>
+<li>&#96;&#96;&#96;php<br>$age&#x3D;array(“Amy”&#x3D;&gt;”23”,”Ken”&#x3D;&gt;”21”,”Betty”&#x3D;&gt;”24”);<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2. ```php</span><br><span class="line">   $age[&#x27;Amy&#x27;]=&quot;23&quot;;</span><br><span class="line">   $age[&#x27;Ken&#x27;]=&quot;21&quot;;</span><br><span class="line">   $age[&#x27;Betty&#x27;]=&quot;24&quot;;</span><br></pre></td></tr></table></figure></li>
+</ol>
 <ul>
-<li>global：</li>
+<li>count()函数</li>
 </ul>
-<p>在所有函数外定义的变量拥有全局作用域，在函数内部声明的变量是局部变量，仅能在函数内部访问，想要在一个函数中使用全局变量，需要使用global关键字。</p>
-<p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$x=10;//全局变量</span><br><span class="line">$y=20;//全局变量</span><br><span class="line">Function test（）&#123;</span><br><span class="line">global $x,$y;//在函数内引用全局变量用上了global</span><br><span class="line">$y=$x+$y;</span><br><span class="line">&#125;</span><br><span class="line">Test();</span><br><span class="line">Echo $y;</span><br><span class="line">?&gt;</span><br><span class="line">​```</span><br><span class="line">以上输出结果为30</span><br></pre></td></tr></table></figure>
+<p>该函数用于获取数组的长度</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$student</span>=<span class="keyword">array</span>(<span class="string">&quot;Amy&quot;</span>,<span class="string">&quot;Ken&quot;</span>,<span class="string">&quot;Betty&quot;</span>);</span><br><span class="line"><span class="keyword">echo</span> <span class="title function_ invoke__">count</span>(<span class="variable">$student</span>);</span><br></pre></td></tr></table></figure>
+
+<p>运行结果为3</p>
+<ul>
+<li>遍历数值数组</li>
+</ul>
+<p>可以通过for循环来遍历</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$student</span>=<span class="keyword">array</span>(<span class="string">&quot;Amy&quot;</span>,<span class="string">&quot;Ken&quot;</span>,<span class="string">&quot;Betty&quot;</span>);</span><br><span class="line"><span class="variable">$length</span>=<span class="title function_ invoke__">count</span>(<span class="variable">$student</span>);</span><br><span class="line"><span class="keyword">for</span>(<span class="variable">$x</span>=<span class="number">0</span>;<span class="variable">$x</span>&lt;<span class="variable">$length</span>;<span class="variable">$x</span>++)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="variable">$student</span>[<span class="variable">$x</span>];</span><br><span class="line">&#125;   </span><br></pre></td></tr></table></figure>
 
 <ul>
-<li>static：</li>
+<li>遍历关联数组</li>
 </ul>
-<p>当一个函数完成时，它的所有变量通常都会删除即内存会被释放，如果期望某个局部变量不被删除，在第一次声明变量时使用static关键字</p>
-<p>然后，每次调用该函数时，该变量将会保留着函数前一次被调用时的值。 </p>
-<p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"> function myTest() </span><br><span class="line"></span><br><span class="line">&#123; static $x=0;</span><br><span class="line"></span><br><span class="line"> echo $x;</span><br><span class="line"></span><br><span class="line"> $x++; </span><br><span class="line"></span><br><span class="line">echo PHP_EOL; // 换行符 </span><br><span class="line"></span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">myTest();</span><br><span class="line"></span><br><span class="line">myTest(); </span><br><span class="line"></span><br><span class="line">myTest();</span><br><span class="line"></span><br><span class="line"> ?&gt; </span><br></pre></td></tr></table></figure>
-<p>&#96;&#96;&#96;</p>
-<p>输出结果：012；这里首先定义变量x的值为0然后通过echo输出x的值为0，再让x加1此时x的值变为1；然后再次引用函数由于static会保留上次调用的函数值于是echo输出的x的值为1而不是0，然后再让x加1此时x的值变为2；再次调用函数输出x值为2</p>
-<p>当删去static后输出结果就变成000</p>
+<p>可以用foreach</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$age</span>=<span class="keyword">array</span>(<span class="string">&quot;Amy&quot;</span>=&gt;<span class="string">&quot;23&quot;</span>,<span class="string">&quot;Betty&quot;</span>=&gt;<span class="string">&quot;21&quot;</span>,<span class="string">&quot;Ken&quot;</span>=&gt;<span class="string">&quot;22&quot;</span>);</span><br><span class="line"><span class="keyword">foreach</span>(<span class="variable">$age</span> <span class="keyword">as</span> <span class="variable">$x</span>=&gt;<span class="variable">$x_value</span>)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">echo</span> <span class="variable">$x</span>.<span class="string">&quot; &quot;</span>.<span class="string">&quot;is <span class="subst">$x_value</span> years old.&quot;</span></span><br><span class="line">    <span class="keyword">echo</span> <span class="string">&quot;&lt;br&gt;&quot;</span>;    </span><br><span class="line">&#125;   </span><br></pre></td></tr></table></figure>
 
+<p>运行结果为 Amy is 23 years old.</p>
+<p>​                   Betty is 21 years old.</p>
+<p>​                   Ken is 22 years old.</p>
+<ul>
+<li>数组排序</li>
+</ul>
+<img src="php数组/数组排序.png" style="zoom:50%;" />
                 
             </div>
             <hr/>
@@ -480,7 +482,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/09/20/php%E5%8F%98%E9%87%8F/">http://example.com/2022/09/20/php%E5%8F%98%E9%87%8F/</a>
+                    <a href="http://example.com/2023/01/13/php%E6%95%B0%E7%BB%84/">http://example.com/2023/01/13/php%E6%95%B0%E7%BB%84/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -602,13 +604,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2023/01/13/php%E6%95%B0%E7%BB%84/">
+                <a href="/2023/01/13/%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6%E7%BD%91%E7%AB%99/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="php数组">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="镜像文件网站">
                         
-                        <span class="card-title">php数组</span>
+                        <span class="card-title">镜像文件网站</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -632,8 +634,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/php/">
-                        <span class="chip bg-color">php</span>
+                    <a href="/tags/%E9%9A%8F%E8%AE%B0/">
+                        <span class="chip bg-color">随记</span>
                     </a>
                     
                 </div>
@@ -647,13 +649,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/19/hello-world/">
+                <a href="/2022/09/20/php%E5%8F%98%E9%87%8F/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="php变量">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">php变量</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -664,7 +666,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-19
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-20
                             </span>
                         <span class="publish-author">
                             
@@ -673,6 +675,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/php/">
+                        <span class="chip bg-color">php</span>
+                    </a>
+                    
                 </div>
                 
             </div>

@@ -4,18 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="php变量, Hexo">
-    <meta name="description" content="1.php变量规则：
-
-变量以 $ 符号开始，后面跟着变量的名称
-
-变量名必须以字母或者下划线字符开始
-
-变量名只能包含字母、数字以及下划线（A-z，0-9和 _ ）
-
-变量名不能包含空格
-
-变量名是区分大小写的（$y 和 $Y是两个不同的">
+    <meta name="keywords" content="镜像文件网站, Hexo">
+    <meta name="description" content="https://mirrors.tuna.tsinghua.edu.cn/
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +18,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>php变量 | Hexo</title>
+    <title>镜像文件网站 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -344,12 +335,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">php变量</h1>
+                    <h1 class="description center-align post-title">镜像文件网站</h1>
                 </div>
             </div>
         </div>
@@ -373,8 +364,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/php/">
-                                <span class="chip bg-color">php</span>
+                            <a href="/tags/%E9%9A%8F%E8%AE%B0/">
+                                <span class="chip bg-color">随记</span>
                             </a>
                         
                     </div>
@@ -389,7 +380,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-09-20
+                    2023-01-13
                 </div>
                 
 
@@ -410,50 +401,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>1.php变量规则：</strong></p>
-<ul>
-<li><p>变量以 $ 符号开始，后面跟着变量的名称</p>
-</li>
-<li><p>变量名必须以字母或者下划线字符开始</p>
-</li>
-<li><p>变量名只能包含字母、数字以及下划线（A-z，0-9和 _ ）</p>
-</li>
-<li><p>变量名不能包含空格</p>
-</li>
-<li><p>变量名是区分大小写的（$y 和 $Y是两个不同的变量）</p>
-</li>
-</ul>
-<p><strong>2.创建（声明）php变量：</strong></p>
-<ul>
-<li><p>php中变量不需要声明，直接使用它赋值时，它就被创建了</p>
-<p>如：<code>$cyy=&quot;cyy hao bang!&quot;;</code></p>
-<p>此时该变量cyy就被创建了，它被赋值为”cyy hao bang！”</p>
-</li>
-<li><p>当赋一个文本类型值给变量时要加””</p>
-<p>**P.S:**php是个弱类型语言，因为它在使用变量时不必声明该变量的数据类型；反之在使用变量前需要声明变量类型的则是强类型语言，如C语言</p>
-</li>
-</ul>
-<p><strong>3.php变量作用域：</strong></p>
-<p>php有四种变量作用域</p>
-<p>Local、global、static、parameter</p>
-<p>但是我对于local和parameter还不是很理解这里着重介绍global与static</p>
-<ul>
-<li>global：</li>
-</ul>
-<p>在所有函数外定义的变量拥有全局作用域，在函数内部声明的变量是局部变量，仅能在函数内部访问，想要在一个函数中使用全局变量，需要使用global关键字。</p>
-<p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$x=10;//全局变量</span><br><span class="line">$y=20;//全局变量</span><br><span class="line">Function test（）&#123;</span><br><span class="line">global $x,$y;//在函数内引用全局变量用上了global</span><br><span class="line">$y=$x+$y;</span><br><span class="line">&#125;</span><br><span class="line">Test();</span><br><span class="line">Echo $y;</span><br><span class="line">?&gt;</span><br><span class="line">​```</span><br><span class="line">以上输出结果为30</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>static：</li>
-</ul>
-<p>当一个函数完成时，它的所有变量通常都会删除即内存会被释放，如果期望某个局部变量不被删除，在第一次声明变量时使用static关键字</p>
-<p>然后，每次调用该函数时，该变量将会保留着函数前一次被调用时的值。 </p>
-<p>例子：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line"> function myTest() </span><br><span class="line"></span><br><span class="line">&#123; static $x=0;</span><br><span class="line"></span><br><span class="line"> echo $x;</span><br><span class="line"></span><br><span class="line"> $x++; </span><br><span class="line"></span><br><span class="line">echo PHP_EOL; // 换行符 </span><br><span class="line"></span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">myTest();</span><br><span class="line"></span><br><span class="line">myTest(); </span><br><span class="line"></span><br><span class="line">myTest();</span><br><span class="line"></span><br><span class="line"> ?&gt; </span><br></pre></td></tr></table></figure>
-<p>&#96;&#96;&#96;</p>
-<p>输出结果：012；这里首先定义变量x的值为0然后通过echo输出x的值为0，再让x加1此时x的值变为1；然后再次引用函数由于static会保留上次调用的函数值于是echo输出的x的值为1而不是0，然后再让x加1此时x的值变为2；再次调用函数输出x值为2</p>
-<p>当删去static后输出结果就变成000</p>
+                <p><a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/">https://mirrors.tuna.tsinghua.edu.cn/</a></p>
 
                 
             </div>
@@ -480,7 +428,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/09/20/php%E5%8F%98%E9%87%8F/">http://example.com/2022/09/20/php%E5%8F%98%E9%87%8F/</a>
+                    <a href="http://example.com/2023/01/13/%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6%E7%BD%91%E7%AB%99/">http://example.com/2023/01/13/%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6%E7%BD%91%E7%AB%99/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -518,8 +466,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/php/">
-                                    <span class="chip bg-color">php</span>
+                                <a href="/tags/%E9%9A%8F%E8%AE%B0/">
+                                    <span class="chip bg-color">随记</span>
                                 </a>
                             
                         </div>
@@ -598,9 +546,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/01/13/%E9%95%9C%E5%83%8F%E6%96%87%E4%BB%B6%E7%BD%91%E7%AB%99/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="镜像文件网站">
+                        
+                        <span class="card-title">镜像文件网站</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Captain yeye
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%9A%8F%E8%AE%B0/">
+                        <span class="chip bg-color">随记</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2023/01/13/php%E6%95%B0%E7%BB%84/">
                     <div class="card-image">
@@ -618,9 +613,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-13
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -636,43 +631,6 @@
                         <span class="chip bg-color">php</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/09/19/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-19
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Captain yeye
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
